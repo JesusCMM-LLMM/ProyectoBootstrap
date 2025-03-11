@@ -1,0 +1,31 @@
+body {
+    background-color: #e0f7fa;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: url('imagenes/fondo.avif') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #0288d1 !important;
+}
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+footer {
+    background-color: #0288d1;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Chewy', cursive;
+    color: #01579b;
+}
+.container {
+    max-width: 1500px; 
+    margin: 0 auto; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 10px; 
+}
+.container-fluid {
+    width: 100%; 
+}

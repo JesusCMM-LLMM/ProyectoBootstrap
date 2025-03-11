@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>El rincón de las mascotas</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/Favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="estilo.css" rel="stylesheet">
+    <style>
+        .carousel-item img {
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 100%; 
+            max-height: 400px; 
+            object-fit: contain; 
+            margin: 0 auto; 
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: drop-shadow(0px 0px 2px rgba(0, 0, 255, 0.8)); 
+        }
+        #carouselExample {
+            max-width: 800px; 
+            margin: 30px; 
+        }
+        .sobremi {
+            text-align: justify;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg"> <!-- se expande en pant grandes y colapsa en pequeñas -->
+        <div class="container" style="background-color:#0288d1 !important;">
+            <a class="navbar-brand" href="index.html">El rincón de las mascotas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="eligiendo.html">Eligiendo tu mascota</a></li>
+                    <li class="nav-item"><a class="nav-link" href="curiosidades.html">Curiosidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="consejos.html">Consejos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-4">
+        <h1>Bienvenidos al rincón de las mascotas</h1>
+        <p> </p>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-9">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagenes/img1.jpg" class="d-block w-100" alt="Gato">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/img2.jpeg" class="d-block w-100" alt="Trece">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/img3.jpeg" class="d-block w-100" alt="Betta">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                <div class="container mt-10" style="background: none;">
+                    <h1 style="text-align: center;">Nuestro propósito</h1>
+                    <p>En este pequeño blog queremos abrirte al maravilloso mundo de compartir tu vida con un nuevo miembro peludo (o con plumas, escamas...) en tu familia.</p>
+                    <p> Esperamos poder brindar algunos consejos o ayuda general para adoptantes primerizos, y que la transición se haga un poco menos difícil.</p>
+                    <div class="row">
+                        <div class="col-6 col-md-6">
+                            <h2 style="text-align: center;"> Secciones</h2>
+                            <h4><a href="eligiendo.html">Eligiendo a tu mascota</a></h4>
+                            <p> En este sección haremos una introducción a las mascotas más comunes en España, con pros y contras para que encuentres tu nuevo miembro de la familia ideal.</p>
+                            <h4><a href="curiosidades.html">Curiosidades</a></h4>
+                            <p> Aquí vamos a darte información sobre alguna característica menos conocida sobre cada tipo de mascota vista anteriormente. ¡Seguro que acabas sorprendid@!</p>
+                            <h4><a href="consejos.html">Consejos</a></h4>
+                            <p> En este sección te damos las bases fundamentales para una convivencia armoniosa con tu nuevo amigo y algunos consejos que te serán útiles a lo largo de este viaje juntos.</p>
+                            <h4><a href="contacto.html">Contacto</a></h4>
+                            <p> ¿No sabes dónde buscar información de un veterinario cercano, una tienda de comida fiable o incluso un etólogo? Ésta es tu sección. Además, mediante un formulario podrás ponerme en contacto conmigo y podré resolver alguna de tus dudas de forma individualizada. </p>
+                        </div>                   
+                        <div class="col-6 col-md-6 text-center">
+                            <h2> Entradas del blog </h3>
+                            <p style="font-size: 200%;"> <b>WORK IN PROGRESS</b> </p>
+                        </div>   
+                    </div>     
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-3 sobremi">
+                <h2 style="text-align: center;">SOBRE MÍ</h2>
+                <p>Desde muy pequeño he sido entusiasta de los animales. Era frecuente verme recogiendo gatos callejeros y llevándomelos a escondidas o pidiendo continuamente tener un perro. A medida que crecí, tuve varias mascotas, la mayoría de ellas llegaron a mí por casualidad, salvo Trece.</p> 
+                <p>Trece es mi familia, mi acompañante. Llevamos 12 años juntos. </p>
+                <img src="imagenes/yo.jpg" style="width: 300px; height: 300px;" alt="yo">
+                                <p> </p>
+                <p> Otros bichitos que me han acompañado en ciertos puntos de mi vida son: </p>
+                <ul>
+                    <li><b>Charles</b>, un hámster ruso que estuvo conmigo desde mis 15 a los 18. Se acostumbró a mi y rara vez estaba en su jaula.</li>
+                    <li><b>Mina</b>, una gata callejera que me encontré en la calle cuando era muy joven. Se quedó conmigo 3 años hasta que una familia se ofreció a cuidarla. Me despertaba lamiéndome la nariz.</li>
+                    <li><b>Cuckoo</b>, un inseparable que apareció un día en mi patio. Parecía viejito, pero se quedó conmigo 1 año y medio. Le encantaba picarme la oreja.</li>
+                    <li><b>Shadow</b>, un Betta Splendens o pez luchador de Siam. Lo cogí cuando la facultad de Biología iba a tirarlo después de unas prácticas con él. Llegó a acostumbrarse a mí, aunque solo fuese por la comida.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-5 p-4 text-white text-center">
+        <p id="randomQuote">Footer</p> 
+    </footer>
+
+    <script>        
+        const quotes = [
+            "Hasta que no hayas amado a un animal, una parte de tu alma permanecerá dormida",
+            "Los animales hablan, pero solo para aquellas personas que saben escuchar",
+            "Los animales son como la música: es inútil tratar de explicar su valor a aquellos que no saben apreciarla",
+            "Los ojos de un animal tienen el poder de hablar un gran lenguaje",
+            "Sé la persona que tu perro cree que eres",
+            "Que mi corazón esté siempre lleno de huellas",
+            "No hay mejor regalo que la mirada de un animal agradecido",
+            "Es maravilloso ver a los animales porque no tienen una opinión sobre sí mismos, no se critican. Simplemente son"
+        ];
+        function getRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length); 
+            return quotes[randomIndex]; 
+        }
+
+        document.getElementById("randomQuote").textContent = getRandomQuote();
+    </script>
+
+    <!-- pongo el script de BS5 al final de la página porque es la práctica más común para evitar que se cargue antes y ralentice -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

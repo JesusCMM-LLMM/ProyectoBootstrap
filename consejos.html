@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>El rincón de las mascotas</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/Favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="estilo.css" rel="stylesheet">
+    <style>
+        .tarj {
+            background-color: transparent;
+            width: 100%;
+            height: 300px;
+            perspective: 1000px; 
+        }
+        .tarj-dentro {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+        .tarj:hover .tarj-dentro {
+            transform: rotateY(180deg);
+        }
+        .tarj-frente, .tarj-espalda {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .tarj-frente {
+            background: url('https://via.placeholder.com/400x300') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }        
+        .tarj-espalda {
+            background: #007bff;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotateY(180deg);
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2rem;
+        }
+        .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 3s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg"> <!-- se expande en pant grandes y colapsa en pequeñas -->
+        <div class="container" style="background-color:#0288d1 !important;">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="eligiendo.html">Eligiendo tu mascota</a></li>
+                    <li class="nav-item"><a class="nav-link" href="curiosidades.html">Curiosidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="consejos.html">Consejos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-4">
+        <h1>Consejos</h1>
+        <p> </p>
+    </div>
+    <div class="container mt-4">
+        <p style="font-size: 145%;"> Al integrar un nuevo miembro en nuestra familia, es normal que nos sintamos abrumados. Es mucha responsibilidad y un cambio enorme. <br> Por eso, aquí os damos seis tips fundamentales que todo dueño primerizo debe tener en cuenta:</p>
+    </div>
+    <div class="container my-5" style="background: none;">
+        <div class="row">
+            <div class="col-md-4 fade-in">
+                <div class="tarj">
+                    <div class="tarj-dentro">                        
+                        <div class="tarj-frente" style="background-image: url('imagenes/vet.jpg');">
+                        </div>                        
+                        <div class="tarj-espalda">
+                            <p>Visitas frecuentes al veterinario, especialmente importante en el primer año de vida. Es necesario que tengan sus vacunas y su estado general revisado al menos cada 3 meses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 fade-in">
+                <div class="tarj">
+                    <div class="tarj-dentro">
+                        <div class="tarj-frente" style="background-image: url('imagenes/comida.jpg');">
+                        </div>
+                        <div class="tarj-espalda">
+                            <p>Proporciona una alimentación adecuada, consultándo con tu veterinario sobre posibles necesidades especiales que pueda tener tu compañero animal. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 fade-in">
+                <div class="tarj">
+                    <div class="tarj-dentro">
+                        <div class="tarj-frente" style="background-image: url('imagenes/paseo.jpg');">
+                        </div>
+                        <div class="tarj-espalda">
+                            <p>Ejercicio y actividad diaria, no solo para mantener su salud sino también para que estén felices y puedan explorar y gastar energía.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container my-5" style="background: none;">
+        <div class="row">
+            <div class="col-md-4 fade-in">
+                <div class="tarj">
+                    <div class="tarj-dentro">                        
+                        <div class="tarj-frente" style="background-image: url('imagenes/espacio.avif');">
+                        </div>                        
+                        <div class="tarj-espalda">
+                            <p>Cada mascota necesita su propio espacio donde se sienta segura y cómoda. Para perros y gatos, una cama acogedora en un rincón tranquilo es ideal. Para peces y aves, asegúrate de que sus acuarios y jaulas estén en un lugar adecuado sin ruidos fuertes o corrientes de aire.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 fade-in">
+                <div class="tarj">
+                    <div class="tarj-dentro">
+                        <div class="tarj-frente" style="background-image: url('imagenes/social.jpg');">
+                        </div>
+                        <div class="tarj-espalda">
+                            <p>Las mascotas, especialmente los perros y gatos, necesitan socializar para evitar problemas de comportamiento. Presenta a tu mascota a diferentes personas, entornos y otras mascotas de manera gradual y positiva para que se sienta segura en diversas situaciones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 fade-in">
+                <div class="tarj">
+                    <div class="tarj-dentro">
+                        <div class="tarj-frente" style="background-image: url('imagenes/juego.avif');">
+                        </div>
+                        <div class="tarj-espalda">
+                            <p>Las mascotas no solo necesitan ejercicio físico, sino también estimulación mental. Usa juguetes interactivos, rompecabezas de comida o entrenamiento con trucos para mantener su mente activa y prevenir el aburrimiento. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+    
+    <footer class="mt-5 p-4 text-white text-center">
+        <p id="randomQuote">Footer</p> 
+    </footer>
+
+    <script>        
+        const quotes = [
+            "Hasta que no hayas amado a un animal, una parte de tu alma permanecerá dormida",
+            "Los animales hablan, pero solo para aquellas personas que saben escuchar",
+            "Los animales son como la música: es inútil tratar de explicar su valor a aquellos que no saben apreciarla",
+            "Los ojos de un animal tienen el poder de hablar un gran lenguaje",
+            "Sé la persona que tu perro cree que eres",
+            "Que mi corazón esté siempre lleno de huellas",
+            "No hay mejor regalo que la mirada de un animal agradecido",
+            "Es maravilloso ver a los animales porque no tienen una opinión sobre sí mismos, no se critican. Simplemente son"
+        ];
+        function getRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length); 
+            return quotes[randomIndex]; 
+        }
+
+        document.getElementById("randomQuote").textContent = getRandomQuote();
+    </script>
+
+    <!-- pongo el script de BS5 al final de la página porque es la práctica más común para evitar que se cargue antes y ralentice -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

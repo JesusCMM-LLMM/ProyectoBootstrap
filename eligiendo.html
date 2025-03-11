@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>El rincón de las mascotas</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/Favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <style>
+       .table th, .table td {
+    vertical-align: middle; 
+}
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg"> <!-- se expande en pant grandes y colapsa en pequeñas -->
+        <div class="container" style="background-color:#0288d1 !important;">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="eligiendo.html">Eligiendo tu mascota</a></li>
+                    <li class="nav-item"><a class="nav-link" href="curiosidades.html">Curiosidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="consejos.html">Consejos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-4">
+        <h1>Eligiendo a tu mascota</h1>
+        <p> </p>
+    </div>
+
+
+    <div class="container mt-5">
+        <p> A la hora de elegir qué tipo de mascota queremos en nuestra vida, es importante tener en cuenta las diferentes necesidades de cada una. No es lo mismo tener un perro en casa 
+            que un pez, por ejemplo. Y a la hora de los cuidados tampoco es lo mismo lo que necesita una pez (cambios de agua, control de temperatura y pH...) que lo que necesita un perro.
+            Por eso, vamos a ver las características de los cuatro tipos de mascotas principales para ayudarte a tomar una decisión informada. <b>Clica en cada una de las imágenes para ver una descripción:</b>
+        </p>
+        <h1 class="text-center mb-4">Tipos de Mascotas</h1>
+        <div class="row">
+            <!-- Perro -->
+            <div class="col-12 col-md-6 mb-4 text-center">
+                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#perro"><img src="imagenes/btnperro.jpg" alt="Botón" class="img-fluid d-block mx-auto"></button>
+                <div id="perro" class="collapse" style="text-align: center;">
+                    Los perros son la mascota predominante en España, por encima de los gatos. 
+                    Con una ezperanza de vida de 10-14 años, son animales que ofrecen compañía, te entienden y son sencillos de entrenar.
+                    Actualmente en España existen numerosas asociaciones protectoras con muchísimos perros buscando un hogar, es la opción más aconsejable
+                    ya que aparte de salvar una vida, encontrarás un compañero para siempre.
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Pros</th>
+                            <th>Contras</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lealtad y compañerismo</td>
+                            <td>Requieren mucho tiempo y atención</td>
+                        </tr>
+                        <tr>
+                            <td>Buen guardián</td>
+                            <td>Necesitan ejercicio diario</td>
+                        </tr>
+                        <tr>
+                            <td>Variedad de tamaños</td>
+                            <td>Algunos pueden ser destructivos si no están entrenados</td>
+                        </tr>
+                        <tr>
+                            <td>Compañeros ideales para actividades al aire libre</td>
+                            <td>Necesitan visitas regulares al veterinario</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+    
+            <!-- Gato -->
+            <div class="col-12 col-md-6 mb-4 text-center">
+                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#gato"><img src="imagenes/btngato.jpg" alt="Botón" class="img-fluid d-block mx-auto"></button>
+                <div id="gato" class="collapse" style="text-align: center;">
+                    La segunda mascota preferida de España. Con una forma de ser muy diferente a los perros, estos animales son muy independientes, hay que darles su espacio.
+                    Pero tienen una conexión muy fuerte con su familia, a la que cuidará y bañará en mimos.
+                    De forma similar a los perros, hay muchas asociaciones que buscan familias para gatos rescatados. 
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Pros</th>
+                            <th>Contras</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Independientes y fáciles de cuidar</td>
+                            <td>Pueden ser más distantes que los perros</td>
+                        </tr>
+                        <tr>
+                            <td>Requieren menos espacio</td>
+                            <td>Pueden ser destructivos con los muebles</td>
+                        </tr>
+                        <tr>
+                            <td>Son muy limpios y se asean solos</td>
+                            <td>Algunos tienen alergias o problemas de salud específicos</td>
+                        </tr>
+                        <tr>
+                            <td>No necesitan paseos regulares</td>
+                            <td>En algunos casos pueden ser territoriales</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            <!-- Peces -->
+            <div class="col-12 col-md-6 mb-4 text-center">
+                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#pez"><img src="imagenes/btnpez.jpeg" alt="Botón" class="img-fluid d-block mx-auto"></button>
+                <div id="pez" class="collapse" style="text-align: center;">
+                    Los peces son una opción que, idealmente, te permite tener varios en una misma pecera siempre que compartan necesidades de temperartura y salinidad del agua.
+                    Tienen un mantenimiento diferente al resto de mascotas, ocupan poco espacio y la decoración del acuario puede ser muy relajante.
+                    Puede ser una muy buena mascota de inicio para los más peques, para que aprendan a responsabilizarse de un animalito. 
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Pros</th>
+                            <th>Contras</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Requieren poco espacio</td>
+                            <td>El cuidado del acuario puede ser complicado</td>
+                        </tr>
+                        <tr>
+                            <td>Son tranquilos y relajantes de observar</td>
+                            <td>No tienen interacción directa con las personas</td>
+                        </tr>
+                        <tr>
+                            <td>Fáciles de mantener una vez establecidos</td>
+                            <td>Los acuarios deben ser limpiados con frecuencia</td>
+                        </tr>
+                        <tr>
+                            <td>Gran variedad de especies</td>
+                            <td>Algunos peces son sensibles a las condiciones del agua</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            <!-- Pájaros -->
+            <div class="col-12 col-md-6 mb-4 text-center">
+                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#pajaro"><img src="imagenes/btnpajaro.png" alt="Botón" class="img-fluid d-block mx-auto"></button>
+                <div id="pajaro" class="collapse" style="text-align: center;">
+                    Los pájaros son un tipo de máscota con una gran variedad de especies. Desde canarios a loros o cacatúas, son animales alegres, que ocupan poco espacio y cuyo canto puede
+                    alegrar cualquier casa. Los cuidados dependen de la especie, y los hay que no salen de su jaula y otros que pueden estar por la casa a sus anchas. 
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Pros</th>
+                            <th>Contras</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Son muy sociables y divertidos</td>
+                            <td>Algunos pueden ser ruidosos</td>
+                        </tr>
+                        <tr>
+                            <td>Requieren poco espacio comparado con los perros</td>
+                            <td>Algunos necesitan mucha atención y estimulación mental</td>
+                        </tr>
+                        <tr>
+                            <td>Pueden aprender a hablar o imitar sonidos</td>
+                            <td>El cuidado de las jaulas puede ser laborioso</td>
+                        </tr>
+                        <tr>
+                            <td>Variedad de especies y colores</td>
+                            <td>Algunos son propensos a enfermedades respiratorias</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>    
+    </div>
+               
+    
+    <footer class="mt-5 p-4 text-white text-center">
+        <p id="randomQuote">Footer</p> 
+    </footer>
+
+    <script>        
+        const quotes = [
+            "Hasta que no hayas amado a un animal, una parte de tu alma permanecerá dormida",
+            "Los animales hablan, pero solo para aquellas personas que saben escuchar",
+            "Los animales son como la música: es inútil tratar de explicar su valor a aquellos que no saben apreciarla",
+            "Los ojos de un animal tienen el poder de hablar un gran lenguaje",
+            "Sé la persona que tu perro cree que eres",
+            "Que mi corazón esté siempre lleno de huellas",
+            "No hay mejor regalo que la mirada de un animal agradecido",
+            "Es maravilloso ver a los animales porque no tienen una opinión sobre sí mismos, no se critican. Simplemente son"
+        ];
+        function getRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length); 
+            return quotes[randomIndex]; 
+        }
+
+        document.getElementById("randomQuote").textContent = getRandomQuote();
+    </script>
+
+    <!-- pongo el script de BS5 al final de la página porque es la práctica más común para evitar que se cargue antes y ralentice -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
